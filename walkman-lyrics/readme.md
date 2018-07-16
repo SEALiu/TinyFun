@@ -1,19 +1,14 @@
 ## Walkman Lyrics
 
-**Python3**
+**Java**
 
-修正歌词时间格式，如下三位小数28.055无法被walkman正确识别导致无法正确显示歌词  
-**ERROR：** `[00:28.055]wonder why, just wanna hold your hands`  
-**CORRECT：** `[00:28.05]wonder why, just wanna hold your hands`
+修正歌词格式
 
 ### 使用方法
 
-修改path路径为歌词文件所在的文件夹：
+**配合 LyricsX使用**
 
-```
-if __name__ == '__main__':
-    path = './data'
-```
+LyricsX 是一款歌词软件，通过 LyricsX 下载的歌词保存在指定目录，歌词文件后缀为`.lrcx`。
 
-并在python3环境下运行
+运行`walkman-lyrics.java`，输入 LyricsX 的歌词下载目录路径，运行后在目录下生成名为`lrc`的文件夹，里面就是正确格式的`.lrc`歌词文件，开心导入mp3吧！
 
